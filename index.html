@@ -8,22 +8,34 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             max-width: 960px;
-            margin: 50px auto;
+            margin: 0 auto;
             padding: 20px;
             color: #000000;
             background-color: #FFFFFF;
-            position: relative;
+        }
+        .logo-container {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            width: 120px; /* Adjust as needed */
+            height: auto;
         }
         h1 {
             font-family: 'Barlow', sans-serif;
             font-weight: 600;
             font-size: 2.2em;
             color: #ED1C2E;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            flex-grow: 1; /* Pushes footer to bottom */
         }
         li {
             margin: 10px 0;
@@ -36,25 +48,20 @@
         a:hover {
             text-decoration: underline;
         }
-        .sut-logo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 120px; /* Adjust size as needed */
-            height: auto;
-        }
         footer {
             font-size: 0.85em;
-            margin-top: 50px;
+            margin-top: auto; /* Pushes footer to bottom */
             padding-top: 10px;
             border-top: 1px solid #E7E7E8;
             color: #3D3A3B;
-            clear: both;
         }
     </style>
 </head>
 <body>
-    <img src="SUT_Ptrait_RGB.png" alt="Swinburne University of Technology" class="sut-logo">
+
+    <div class="logo-container">
+        <img src="SUT_Ptrait_RGB.png" alt="Swinburne University of Technology">
+    </div>
 
     <h1>Educational Leadership Professional Learning Series</h1>
 
@@ -67,5 +74,6 @@
     <footer>
         CRICOS 00111D  RTO 3059  TEQSA PRV12148 Australian University
     </footer>
+
 </body>
 </html>
