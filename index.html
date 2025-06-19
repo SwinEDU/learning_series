@@ -17,14 +17,16 @@
       background-color: #b00020;
       padding: 2rem;
       border-bottom: 2px solid #e0e0e0;
-      position: relative;
       color: white;
+      text-align: center;
+    }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
     }
     .logo {
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-      height: 80px;
+      height: 120px;
     }
     .container {
       max-width: 800px;
@@ -33,7 +35,6 @@
     }
     h1 {
       font-size: 2rem;
-      text-align: center;
       margin-bottom: 0.5rem;
     }
     h2 {
@@ -72,11 +73,12 @@
 <body>
 
   <header>
-    <div class="container">
-      <h1>Educational Leadership Professional Learning Series</h1>
-    </div>
-    <img src="SUT_Ptrait_RGB.png" alt="Swinburne Logo" class="logo"/>
+    <h1>Educational Leadership Professional Learning Series</h1>
   </header>
+
+  <div class="logo-container">
+    <img src="SUT_Ptrait_RGB.png" alt="Swinburne Logo" class="logo"/>
+  </div>
 
   <main class="container">
     <p>
